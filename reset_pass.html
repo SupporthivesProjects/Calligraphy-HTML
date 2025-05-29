@@ -319,33 +319,32 @@
 
     <section class="login">
         <div class="div1_login">
-            <div class="div1_login_main">
-                <h3 class="heading_login">Login</h3>
+            <div class="div1_resetPass_main">
+                <h3 class="heading_login">Reset Password</h3>
                 <p class="para_login">Lorem ipsum dolor sit amet consectetur. Netus quisque amet leo leo massa vel eget
                     <br>feugiat. Porttitor in vitae elit eleifend purus arcu amet. In sed proin enim.</p>
-                <div class="div1_login_btn">
-                    <p class="para2_login">don't have an account?</p>
-                    <div class="div1_login_a">
-                        <a href="" class="login_a">Register here</a>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="div2_login">
             <div class="div2_login_border">
                 <div class="div2_login_inner">
-                    <input type="text" class="input_login" placeholder="Email Address">
                     <div class="eye_input_login w-100">
                         <input type="password" id="input_login_id" class="input_login w-100" placeholder="Password">
                         <img src="./assets/img/open_eye.svg" alt="" id="id_of_eye_img" class="pass_img_eye"
                             onclick="togglePassword('input_login_id',this)">
                     </div>
-                    <button class="btn btn_global_dark input_btn_div2">
+                    <div class="eye_input_login w-100">
+                        <input type="password" id="input_login_id" class="input_login w-100"
+                            placeholder="Confirm New Password">
+                        <img src="./assets/img/open_eye.svg" alt="" id="id_of_eye_img" class="pass_img_eye"
+                            onclick="togglePassword('input_login_id',this)">
+                    </div>
+                    <button class="btn btn_global_dark input_btn_div2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
                         <span></span>
-                        Login
+                        Save new password
                         <span></span>
                     </button>
-                    <p class="div2_para3" data-bs-toggle="modal" data-bs-target="#exampleModal">Forgot password?</p>
                 </div>
             </div>
         </div>
@@ -367,10 +366,6 @@
         </div>
     </section>
 
-
-
-
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="">
@@ -378,30 +373,25 @@
                     <div class="div_modal_border">
                         <div class="div_modal_inner">
                             <div class="heading_modal_div">
-                                <h2 class="heading_modal">Forgot your password?</h2>
+                                <h2 class="heading_modal">Your new password <br class="mobile_none">has <br class="desktop_none"> been updated</h2>
                                 <p class="para_modul">Lorem ipsum dolor sit amet consectetur. Id malesuada pulvinar in
-                                    nulla
-                                    eu tristique convallis pharetra. Dui vestibulum in aliquet.</p>
+                                    nulla eu tristique convallis pharetra. Dui vestibulum in aliquet bibendum amet. Ac
+                                    in a mauris porttitor id. Viverra turpis sit in,</p>
                             </div>
-                            <input type="text" class="input_login" placeholder="Email Address">
-                            <div class="div_modul_btn">
-                                <button class="btn btn_global_light w-100 " data-bs-dismiss="modal" aria-label="Close">
-                                    <span></span>
-                                    close
-                                    <span></span>
-                                </button>
-                                <button class="btn btn_global_dark w-100">
-                                    <span></span>
-                                    Submit
-                                    <span></span>
-                                </button>
-                            </div>
+                            <button class="btn btn_global_dark w-100">
+                                <span></span>
+                                login
+                                <span></span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
 
     <footer class="footer">
         <div class="footer_top">
