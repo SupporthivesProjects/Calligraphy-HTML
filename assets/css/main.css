@@ -188,9 +188,13 @@
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
+    min-width: 410px;
 }
 .header_top {
     padding: 9px 0px;
+}
+#header {
+    border-bottom: 1px solid var(--Gold, #C9AB81);
 }
 .currency_drop_container {
     position: relative;
@@ -503,7 +507,68 @@
     width: 7px;
     height: 1px;
 }
+.product_card_price {
+    color: var(--Dark-Teal, #1B1D1E);
+    text-align: right;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 169.5%; /* 37.29px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.product_card_price span {
+    color: var(--Dark-Gold, #B18E5E);
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 169.5%;
+    text-transform: capitalize;
+}
 
+.product_card_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.product_card_title {
+    color: var(--Dark-Teal, #1B1D1E);
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 169.5%; /* 42.375px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.product_card_pre_title {
+    color: var(--Dark-Gold, #B18E5E);
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 169.5%; /* 27.12px */
+    margin-bottom: 0px;
+}
+.product_card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+}
+.product_card {
+    width: 100%;
+    max-width: 342px;
+    background: #FFFFFF;
+}
 
 
 
