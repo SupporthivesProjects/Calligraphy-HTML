@@ -159,16 +159,16 @@ function showFilterDrop(el) {
 }
 
 
-// $(document).ready(function () {
-//     $(window).on('scroll', function () {
-//         const scrollTop = window.scrollY;
-//         if (scrollTop >= 90) {
-//             $("#header").css("background", "#162222")
-//         } else {
-//             $("#header").css("background", "transparent")
-//         }
-//     });
-// });
+$(document).ready(function () {
+    $(window).on('scroll', function () {
+        const scrollTop = window.scrollY;
+        if (scrollTop >= 90) {
+            $("#header").css("background", "#1B1D1E")
+        } else {
+            $("#header").css("background", "transparent")
+        }
+    });
+});
 
 function dash_drop_mob(drp_div_id, rote_id, text_name, img_num, el) {
     const a = document.getElementById(drp_div_id);

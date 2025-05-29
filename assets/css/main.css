@@ -405,6 +405,108 @@
 }
 
 
+.btn_global_light {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #C9AB81);
+    border-radius: 0px;
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.btn_global_light:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #C9AB81);
+    background: var(--Dark-Gold, #B18E5E);
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 2px var(--Gold, #C9AB81);
+}
+.btn_global_light span {
+    background: #FFF;
+    width: 7px;
+    height: 0px;
+    transition: all 0.3s linear;
+}
+.btn_global_light:hover span {
+    width: 7px;
+    height: 1px;
+}
+
+.btn_global_dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #1B1D1E);
+    border-radius: 0px;
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    background: #1B1D1E;
+}
+.btn_global_dark:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #C9AB81);
+    background: var(--Dark-Gold, #B18E5E);
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 2px var(--Gold, #C9AB81);
+}
+.btn_global_dark span {
+    background: #FFF;
+    width: 7px;
+    height: 0px;
+    transition: all 0.3s linear;
+}
+.btn_global_dark:hover span {
+    width: 7px;
+    height: 1px;
+}
+
+
+
+
 @media only screen and (max-width: 700px) {
     .desktop_header {
         display: none;
