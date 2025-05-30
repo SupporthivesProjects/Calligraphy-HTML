@@ -1,7 +1,386 @@
+.login {
+    background-color:var(--Grayscale-White, #FCFAF4);
+}
+.div1_login {
+    background-image: url(../img/login_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 471px;
+}
+.div1_login_main {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+padding-top: 205px;
+}
+.heading_login {
+    color: var(--Grayscale-White, #FFF);
+font-family: "Caviar Dreams";
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 2.56px;
+text-transform: uppercase;
+margin-bottom: 0%;
+}
+.para_login {
+    color: var(--Grayscale-500---Light, #C7C7C7);
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+margin-bottom: 0%;
+}
+.div1_login_btn {
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+height: 28px;
+}
+.para2_login {
+    color: var(--Gold, #C9AB81);
+text-align: center;
+font-family: "Open Sans Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 155%; /* 27.9px */
+letter-spacing: 1.08px;
+text-transform: uppercase;
+margin-bottom: 0%;
+}
+.div1_login_a {
+     display: flex;
+padding: 8px 0px;
+justify-content: center;
+align-items: center;
+gap: 9px;
+border-bottom: 1px solid var(--Grayscale-White, #FFF);
+}
+.login_a {
+    color: var(--Grayscale-White, #FFF);
+font-family: "Open Sans Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 155%; /* 27.9px */
+letter-spacing: 1.08px;
+text-transform: uppercase;
+margin-bottom: 0%;
+text-decoration: none;
+}
+.div2_login {
+    display: flex;
+width: 100%;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+padding: 40px 0px;
+}
+.div2_login_border {
+    display: flex;
+width: 640px;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+border: 1px solid var(--Grayscale-White, #FFF);
+}
+.div2_login_inner {
+    display: flex;
+padding: 40px 64px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+align-self: stretch;
+background: var(--Grayscale-White, #FFF);
+}
+.div3_login {
+    background-image: url(../img/login_bottom_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 74px;
+    padding-bottom: 163px;
+}
+.input_login {
+    display: flex;
+height: 48px;
+padding: 8px 12px;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+background: var(--Grayscale-200---Near-White, #FAFAFA);
+color: var(--Grayscale-800---Darkest, #434343);
+font-family: "Josefin Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 169.5%; /* 27.12px */
+margin-bottom: 0%;
+}
+.eye_input_login {
+    position: relative;
+}
+.pass_img_eye {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input_btn_div2 {
+    width: 100%;
+    max-width: 264px;
+}
+.div2_para3 {
+    display: flex;
+padding: 8px 0px;
+justify-content: center;
+align-items: center;
+gap: 9px;
+border-bottom: 1px solid var(--Teal, #1B868F);
+color: var(--Teal, #1B868F);
+font-family: "Open Sans Condensed";
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 155%; /* 27.9px */
+letter-spacing: 1.08px;
+text-transform: uppercase;
+margin-bottom: 0%;
+}
+.div3_login_inner {
+    display: flex;
+width: 970px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 42px;
+margin-left: auto;
+    margin-right: auto;
+}
+.div3_login_heading {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 32px;
+align-self: stretch;
+}
+.login_heading2 {
+    color: var(--Gold, #C9AB81);
+text-align: center;
+font-family: "Caviar Dreams";
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: 143.5%; /* 71.75px */
+letter-spacing: 2px;
+text-transform: uppercase;
+margin-bottom: 0%;
+}
+.para_login4 {
+    color: var(--Grayscale-700---Darker, #636363);
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 169.5%; /* 27.12px */
+margin-bottom: 0%;
+}
+.div_modal_border {
+    display: flex;
+    width: 610px;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+border: 1px solid var(--Grayscale-White, #FFF);
+}
+.div_modal_inner {
+    display: flex;
+width: 562px;
+padding: 40px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 44px;
+background: var(--Grayscale-White, #FFF);
+}
+.heading_modal_div{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+}
+.heading_modal {
+    color: var(--Gold, #C9AB81);
+text-align: center;
+font-family: "Caviar Dreams";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 143.5%; /* 45.92px */
+text-transform: uppercase;
+margin-bottom: 0%;
+}
+.para_modul {
+    color: var(--Grayscale-700---Darker, #636363);
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 169.5%; /* 27.12px */
+margin-bottom: 0%;
+}
+.div_modul_btn {
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+}
+.modal_con {
+    background-color: transparent;
+}
 
+.div1_resetPass_main {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+padding-top: 240px;  
+}
 
 @media only screen and (max-width: 700px) {
-  
+    .div1_login {
+    background-image: url(../img/login_bg_mo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 384px;
+    margin-top: 80px;
+}
+.div1_login_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 24px;
+}
+.div1_resetPass_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 24px;
+}
+.heading_login {
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Caviar Dreams";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 2.56px;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    text-align: center;
+}
+.div2_login {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 24px;
+}
+.div3_login_inner {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div2_login_border {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    border: 0px solid var(--Grayscale-White, #FFF);
+}
+.div2_login_inner {
+    display: flex;
+    padding: 0px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    background: var(--Grayscale-White, #FCFAF4);
+}
+.input_login {
+    background: var(--Grayscale-White, #FFF);
+}
+.login_heading2 {
+    color: var(--Gold, #C9AB81);
+    text-align: center;
+    font-family: "Caviar Dreams";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143.5%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+}
+.div3_login {
+   padding: 40px 24px;
+   background-image: url(../img/login_bottom_bg_mo.png);
+}
+.div_modal_border {
+    display: flex;
+    width: 0px; 
+    padding: 0px; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px; 
+    border: 0px solid var(--Grayscale-White, #FFF);
+}
+.div_modal_inner{
+    display: flex;
+width: 359px;
+padding: 32px 16px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 24px;
+}
+.div_modul_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    flex-direction: column;
+}
 }
 
 @media only screen and (min-width: 780px) and (max-width:991px) {
