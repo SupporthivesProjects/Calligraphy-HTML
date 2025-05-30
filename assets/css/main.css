@@ -188,9 +188,13 @@
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
+    min-width: 410px;
 }
 .header_top {
     padding: 9px 0px;
+}
+#header {
+    border-bottom: 1px solid var(--Gold, #C9AB81);
 }
 .currency_drop_container {
     position: relative;
@@ -403,6 +407,169 @@
 .footer_card:hover .footer_card_bottom {
     height: 162px;
 }
+
+
+.btn_global_light {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #C9AB81);
+    border-radius: 0px;
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.btn_global_light:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #C9AB81);
+    background: var(--Dark-Gold, #B18E5E);
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 2px var(--Gold, #C9AB81);
+}
+.btn_global_light span {
+    background: #FFF;
+    width: 7px;
+    height: 0px;
+    transition: all 0.3s linear;
+}
+.btn_global_light:hover span {
+    width: 7px;
+    height: 1px;
+}
+
+.btn_global_dark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #1B1D1E);
+    border-radius: 0px;
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    background: #1B1D1E;
+}
+.btn_global_dark:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 2px solid var(--Gold, #C9AB81);
+    background: var(--Dark-Gold, #B18E5E);
+    color: var(--Grayscale-White, #FFF);
+    font-family: "Open Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 155%; /* 27.9px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 2px var(--Gold, #C9AB81);
+}
+.btn_global_dark span {
+    background: #FFF;
+    width: 7px;
+    height: 0px;
+    transition: all 0.3s linear;
+}
+.btn_global_dark:hover span {
+    width: 7px;
+    height: 1px;
+}
+.product_card_price {
+    color: var(--Dark-Teal, #1B1D1E);
+    text-align: right;
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 169.5%; /* 37.29px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.product_card_price span {
+    color: var(--Dark-Gold, #B18E5E);
+    font-family: "Josefin Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 169.5%;
+    text-transform: capitalize;
+}
+
+.product_card_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+.product_card_title {
+    color: var(--Dark-Teal, #1B1D1E);
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 169.5%; /* 42.375px */
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.product_card_pre_title {
+    color: var(--Dark-Gold, #B18E5E);
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 169.5%; /* 27.12px */
+    margin-bottom: 0px;
+}
+.product_card_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px;
+}
+.product_card {
+    width: 100%;
+    max-width: 342px;
+    background: #FFFFFF;
+}
+
 
 
 @media only screen and (max-width: 700px) {
