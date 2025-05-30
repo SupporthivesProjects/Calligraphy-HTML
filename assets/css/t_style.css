@@ -1001,8 +1001,6 @@ margin-bottom: 0px;
     line-height: 169.5%; /* 27.12px */
 }
 .contact2 {
-    background: #FCFAF4;
-    background-blend-mode: multiply, normal;
     display: flex;
     flex-direction: row;
 }
@@ -1258,6 +1256,17 @@ border-bottom: 1px solid var(--Grayscale-700---Darker, #636363);
     align-items: flex-start;
 }
 
+.for_bg {
+    background: url(../img/all_bg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center center;
+}
+
+.width_here {
+        max-width: 660px!important;
+        width: 100%!important;
+}
   
 
   
@@ -1649,6 +1658,7 @@ margin-bottom: 0px;
 
     /* contactus  */
     .contact1 {
+        margin-top: 80px;
         flex-direction: column-reverse;
     }
     .right_contact {
