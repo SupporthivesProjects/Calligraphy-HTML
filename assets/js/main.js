@@ -43,7 +43,6 @@ function justDrop(droperId, roterId, element) {
 
 
 function field_box_file() {
-    console.log('me');
     document.getElementById('document').click();
 }
 $("#document").on("change", function (e) {
@@ -65,63 +64,38 @@ function togglePassword(input_id, input_eye_image) {
 
 
 $(document).ready(function () {
-    $('#hs3').owlCarousel({
+    $('#pds3').owlCarousel({
         loop:false,
         margin: 24,
         nav:false,
         dots: false,
+        autoWidth:true,
         responsive:{
             0:{
                 loop: true,
                 items:1.2,
-                nav: true,
+                margin: 16,
+                // nav: true,
                 dots: true,
-                dotsEach: 1,
-                navText: [
-                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
-                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
-                ],
+                // dotsEach: 1,
+                // navText: [
+                //     "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
+                //     "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
+                // ],
             },
             600:{
                 items:3
             },
             1000:{
-                items:4
+                items:3,
+                loop: true
             },
-            1600:{
-                items:5
+            1440:{
+                items:4
             }
         }
     });
 
-    $('#hs5').owlCarousel({
-        loop:false,
-        margin: 24,
-        nav:false,
-        dots: false,
-        responsive:{
-            0:{
-                loop: true,
-                items:1.2,
-                nav: true,
-                dots: true,
-                dotsEach: 1,
-                navText: [
-                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M13.3135 24.627L1.99977 13.3132L13.3135 1.99954' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>",
-                    "<span class='btn btn_owl'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='27' viewBox='0 0 16 27' fill='none'><path d='M2.68652 2L14.0002 13.3137L2.68652 24.6274' stroke='#BA8B4A' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg></span>"
-                ],
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:4
-            },
-            1600:{
-                items:5
-            }
-        }
-    })
 })
 
 function addQty(inp_id) {
@@ -159,16 +133,16 @@ function showFilterDrop(el) {
 }
 
 
-// $(document).ready(function () {
-//     $(window).on('scroll', function () {
-//         const scrollTop = window.scrollY;
-//         if (scrollTop >= 90) {
-//             $("#header").css("background", "#162222")
-//         } else {
-//             $("#header").css("background", "transparent")
-//         }
-//     });
-// });
+$(document).ready(function () {
+    $(window).on('scroll', function () {
+        const scrollTop = window.scrollY;
+        if (scrollTop >= 1) {
+            $("#header").css("background", "#1B1D1E")
+        } else {
+            $("#header").css("background", "transparent")
+        }
+    });
+});
 
 function dash_drop_mob(drp_div_id, rote_id, text_name, img_num, el) {
     const a = document.getElementById(drp_div_id);
