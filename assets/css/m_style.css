@@ -1477,6 +1477,21 @@
     background-repeat: no-repeat;
     padding: 53px 0px;
 }
+.abs6 {
+    min-height: 300px;
+}
+.abs2 {
+    background: url(../img/paper_bg_whole.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.abs2 .w_service2 {
+    padding-top: 64px;
+}
+
+
+
 
 
 
