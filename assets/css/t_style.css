@@ -47,6 +47,14 @@
     background-position: center center;
 }
 
+.home_left {
+    width: 41.93vw;
+    background: url(../img/home_left.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .float3 {
     max-height: 700px;
     position: absolute;
@@ -197,7 +205,7 @@
 }
 
 .home_gg_img {
-
+    z-index: 5;
     display: flex;
     width: 41.7vw;
     background: url(../img/home_ggg.png);
@@ -237,6 +245,7 @@
 }
 
 .right5 {
+    position: relative;
     flex-grow: 1;
     /* background: url(../img/ws4_bg.svg); */
     background: url(../img/all_bg.png);
@@ -244,6 +253,19 @@
     background-repeat: repeat;
     background-size: auto;
     background-position: center center;
+}
+
+.service_icon1_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+}
+.service_icon1_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
 }
 
 .content5 {
@@ -434,7 +456,7 @@
 .checkout_div {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 24px;
     align-self: stretch;
 }
@@ -980,13 +1002,35 @@ input[type=radio] {
 
 .left_contact {
     width: 36.31%;
-    background: url(../img/contactus_left.png) #1D1F20;
+    background: url(../img/fullcontact_bg.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
 
 }
+.contact_curveicon {
+    position: absolute;
+    bottom: -30px;
+    left: -103px;
+    z-index: -1;
+}
+.contact_leftleaf {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
+.contact_rightleaf {
+    position: absolute;
+    left: 31.875vw;
+    top: 0;
+}
+
+.contact_splash_top {
+    position: absolute;
+    left: 0;
+    top: 31px;
+}
 
 .right_contact {
     flex-grow: 1;
@@ -995,9 +1039,10 @@ input[type=radio] {
 
 
 .contact_div_border {
+    z-index: 4;
+    position: relative;
     margin-left: 12.71vw;
     margin-top: 152px;
-    z-index: 3;
     position: absolute;
     border: 1px solid var(--Grayscale-White, #FFF);
     display: flex;
@@ -1144,8 +1189,15 @@ input[type=radio] {
 }
 
 .contact2 {
+    position: relative;
     display: flex;
     flex-direction: row;
+}
+
+.contact_icon1 {
+    position: absolute;
+    right: 0;
+    top: 26px;
 }
 
 .faq_section {
@@ -1361,8 +1413,85 @@ input[type=radio] {
     top: 50%;
     transform: translateY(-50%);
     overflow: auto;
+    transition: all 0.2s linear;
+}
+.home_crd:hover .crd_imgimg {
+    height: 314px;
+    filter: brightness(0.8);
 }
 
+.for_crd_img {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s linear;
+}
+
+.home_crd:hover .crd_imgimg .for_crd_img  {
+    opacity: 1;
+}
+.home_crd_section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+.home_4 {
+    /* background: url(../img/home4_bg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top center; */
+    position: relative;
+        padding: 64px 12px;
+}
+.home_6 {
+    /* position: relative; */
+}
+.homeswirl_top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+}
+
+.homeicon_bottom {
+        position: absolute;
+        bottom: 27px;
+        left: 0;
+        z-index: 2;
+}
+
+.homeswirl_bottom {
+    position: absolute;
+    bottom: 0;
+    right: -251px;
+    z-index: 2;
+}
+
+.home_icontop {
+    position: absolute;
+    top: 27px;
+    right: 0;
+    z-index: 2;
+}
+.home_4_tt {
+    color: var(--Gold, #C9AB81);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    
+    /* Heading/H2 */
+    font-family: "Caviar Dreams";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143.5%; /* 71.75px */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
 
 /* revert pages */
 
@@ -1388,6 +1517,15 @@ input[type=radio] {
     padding-right: 32px;
     padding-top: 164.5px;
     padding-bottom: 164.5px;
+}
+
+.homecontent3_g {
+    margin-right: auto;
+    margin-left: 76px;
+    display: flex;
+    padding-right: 32px;
+    padding-top: 106.5px;
+    padding-bottom: 106.5px;
 }
 
 
@@ -1658,6 +1796,7 @@ input[type=radio] {
 }
 
 .w_service2 {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1909,10 +2048,107 @@ input[type=radio] {
     background: var(--Cream, #FCFAF4);
 }
 
+.home_padding {
+    padding: 258.5px 32px 187.5px 32px !important;
+}
+
+.extra_margin {
+    margin-bottom: 40px;
+}
+
+.different_width {
+    max-width: 708px!important;
+}
+
+.home_price {   
+    color: var(--Gold, #C9AB81);
+leading-trim: both;
+text-edge: cap;
+
+/* P/Standard */
+font-family: "Josefin Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 169.5%; /* 27.12px */
+margin-bottom: 24px;
+margin-top: 8px;
+}
+
+.home_cal {
+    color: var(--Grayscale-White, #FFF);
+    leading-trim: both;
+    text-edge: cap;
+    
+    /* Heading/H3 */
+    font-family: "Caviar Dreams";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 143.5%; /* 45.92px */
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.top_icon_right {
+    position: absolute;
+    bottom: -44px;
+    right: 0px;
+    z-index: 4;
+}
 
 
+.top_left_icon {
+    position: absolute;
+    left: 0px;
+    bottom: -79px;
+    z-index: 4;
+}
+
+.splash2_right {
+    position: absolute;
+    bottom: -9px;
+    right: 0px;
+    z-index: 4;
+}
+
+.splash2_left {
+    position: absolute;
+    bottom: -9px;
+    left: 0px;
+    z-index: 4;
+}
 
 
+.splash2_right_home {
+    position: absolute;
+    bottom: 99px;
+    right: 0px;
+    z-index: 4;
+}
+
+.splash2_left_home {
+    position: absolute;
+    bottom: 99px;
+    left: 0px;
+    z-index: 4;
+}
+
+.w_service6 {
+    position: relative;
+}
+
+.swirl_m1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.swirl_m2 {
+    position: absolute;
+    left: 0;
+    bottom: 166px;
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -1924,8 +2160,14 @@ input[type=radio] {
         display: block;
     }
 
+    .extra_margin {
+        margin-bottom: 32px;
+    }
     .modal_btnwidth3 {
         width: 100%;
+    }
+    .home_padding {
+        padding: 112px 24px 82px 24px!important;
     }
 
     .for_hundred {
@@ -1965,6 +2207,13 @@ input[type=radio] {
         background-position: right center;
     }
 
+    .other_background_only_phone {
+        background: url(../img/home3_bg_mob.png)!important;
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        background-position: bottom right !important;
+    }
+
     .right3 {
         height: 315px;
         width: auto;
@@ -1978,6 +2227,15 @@ input[type=radio] {
         height: 315px;
         width: auto;
         background: url(../img/right3_mob.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .home_left {
+        height: 315px;
+        width: auto;
+        background: url(../img/home_left_mob.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -2232,6 +2490,7 @@ input[type=radio] {
 
     .checkout_div {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .right_checkout {
@@ -2454,6 +2713,11 @@ input[type=radio] {
         padding: 80px 24px 40px 24px;
     }
 
+    .homecontent3_g {
+        margin: 0;
+        padding: 40px 24px 40px 24px;
+    }
+
     .g_service5 {
         flex-direction: column;
     }
@@ -2463,7 +2727,7 @@ input[type=radio] {
     }
 
     .home_ggg {
-        padding: 40px 24px 0px 24px;
+        padding: 40px 24px;
     }
 
     .content5_in_g {
@@ -2717,6 +2981,47 @@ line-height: 143.5%; /* 22.96px */
     .main_home7in {
         padding: 40px 24px;
         gap: 32px;
+    }
+    .home_price {
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+    .home_cal {
+        color: var(--Grayscale-White, #FFF);
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        
+        /* Heading/H4 */
+        font-family: "Caviar Dreams";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 143.5%; /* 28.7px */
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    .home_4 {
+        padding: 40px 24px;
+    }
+    .home_4_tt {
+        color: var(--Gold, #C9AB81);
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        
+        /* Heading/H3 */
+        font-family: "Caviar Dreams";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 143.5%; /* 45.92px */
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+    .home_crd_section {
+        flex-direction: column;
+        gap: 16px;
     }
 }
 
