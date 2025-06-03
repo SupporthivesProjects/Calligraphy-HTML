@@ -741,6 +741,27 @@
     /* 27.12px */
 }
 
+.upload_div_t {
+    display: flex
+;
+max-width: 354px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--Grayscale-400---Lighter, #E4E4E4);
+    background: var(--Grayscale-200---Near-White, #FAFAFA);
+    color: var(--Grayscale-800---Darkest, #434343);
+    font-family: "Josefin Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 169.5%;
+    padding: 9.5px 12px;
+    border-radius: 0px;
+    width: 100%;
+    outline: 0px;
+}
 .input_tagt::placeholder {
     color: var(--Grayscale-800---Darkest, #434343);
     leading-trim: both;
@@ -2164,6 +2185,9 @@ margin-top: 8px;
         display: block;
     }
 
+    .upload_div_t {
+        max-width: unset;
+    }
     .extra_margin {
         margin-bottom: 32px;
     }

@@ -481,16 +481,16 @@
                     <line y1="-0.5" x2="29" y2="-0.5" transform="matrix(-1 0 0 1 29.5 2)" stroke="#1B1D1E"/>
                     <circle cx="1.5" cy="1.5" r="1.5" transform="matrix(-1 0 0 1 3 0)" fill="#1B1D1E"/>
                 </svg>
-                <p class="abs7_pre_title">How to get</p>
+                <p class="abs7_pre_title">Here’s How We  Create Your </p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="3" viewBox="0 0 30 3" fill="none">
                     <line x1="0.5" y1="1.5" x2="29.5" y2="1.5" stroke="#1B1D1E"/>
                     <circle cx="28.5" cy="1.5" r="1.5" fill="#1B1D1E"/>
                 </svg>
             </div>
-            <h1 class="abs7_title">STarted</h1>
+            <h1 class="abs7_title">Custom Pieces</h1>
             <div class="abs7_card_div">
                 <div class="abs7_card">
-                    <img src="./assets/img/abs7_ci1.png" alt="" class="img-fluid abs7_card_img">
+                    <img src="./assets/img/bespoke1_img.png" alt="" class="img-fluid abs7_card_img">
                     <div class="abs7_card_body">
                         <h5 class="abs7_card_title">Submit Your Request</h5>
                         <p class="abs7_card_subtitle">
@@ -504,7 +504,7 @@
                     </button>
                 </div>
                 <div class="abs7_card">
-                    <img src="./assets/img/abs7_ci2.png" alt="" class="img-fluid abs7_card_img">
+                    <img src="./assets/img/bespoke2_img.png" alt="" class="img-fluid abs7_card_img">
                     <div class="abs7_card_body">
                         <h5 class="abs7_card_title">Bespoke Creation</h5>
                         <p class="abs7_card_subtitle">
@@ -518,7 +518,7 @@
                     </button>
                 </div>
                 <div class="abs7_card">
-                    <img src="./assets/img/abs7_ci3.png" alt="" class="img-fluid abs7_card_img">
+                    <img src="./assets/img/bespoke3_img.png" alt="" class="img-fluid abs7_card_img">
                     <div class="abs7_card_body">
                         <h5 class="abs7_card_title">Delivery to Your Inbox</h5>
                         <p class="abs7_card_subtitle">
@@ -568,7 +568,25 @@
 
                             </div>
                             <div class="single_line_form" style="gap: 16px;">
-                                <input type="text" placeholder="upload" class="input_tagt " style="width: 354px;">
+                                <div class="upload_div_t" onclick="field_box_file()">
+                                    <p class="upload_placeholder" id="upload_placeholder">Upload brief</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M17 9.50195C19.175 9.51395 20.353 9.61095 21.121 10.379C22 11.258 22 12.672 22 15.5V16.5C22 19.329 22 20.743 21.121 21.622C20.243 22.5 18.828 22.5 16 22.5H8C5.172 22.5 3.757 22.5 2.879 21.622C2 20.742 2 19.329 2 16.5V15.5C2 12.672 2 11.258 2.879 10.379C3.647 9.61095 4.825 9.51395 7 9.50195" stroke="url(#paint0_linear_7573_6736)" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M12 15.5V2.5M12 2.5L15 6M12 2.5L9 6" stroke="url(#paint1_linear_7573_6736)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <defs>
+                                      <linearGradient id="paint0_linear_7573_6736" x1="2" y1="9.50195" x2="13.8779" y2="27.7785" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#8482FF"/>
+                                        <stop offset="1" stop-color="#7723FE"/>
+                                      </linearGradient>
+                                      <linearGradient id="paint1_linear_7573_6736" x1="9" y1="2.5" x2="18.8927" y2="7.06585" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#8482FF"/>
+                                        <stop offset="1" stop-color="#7723FE"/>
+                                      </linearGradient>
+                                    </defs>
+                                  </svg>
+                                  </div>
+                                  <input type="file" class="form-control input_upload" style="display: contents;" id="document" name="document" required>
+                                  
                                 <select id="options" name="options" class="dropdown_t" style="max-width: unset;">
                                     <option value="" disabled selected>Country</option>
                                     <option value="option1">Option 1</option>
