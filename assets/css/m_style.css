@@ -2327,10 +2327,10 @@
         gap: 40px;
     }
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
 
@@ -2381,10 +2381,10 @@
         max-width: 520px;
     }
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
 
@@ -2435,10 +2435,10 @@
         max-width: 520px;
     }
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
 
@@ -2456,10 +2456,10 @@
         max-width: 700px;
     }
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
     .abs7_card_div {
@@ -2473,10 +2473,10 @@
         max-width: 700px;
     }
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
 }
@@ -2484,10 +2484,10 @@
 @media only screen and (min-width: 1700px) and (max-width:1799px) {
     
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
 }
@@ -2495,10 +2495,10 @@
 @media only screen and (min-width: 1800px) and (max-width:1919px) {
     
     .abs1_main {
-        min-height: 85vh;
+        min-height: 918px;
     }
     .abs1_video {
-        min-height: 85vh;
+        min-height: 918px;
         object-fit: cover;
     }
 }
