@@ -318,38 +318,45 @@
     </header>
 
     <section class="login">
-        <div class="div1_login">
-            <div class="div1_resetPass_main">
-                <h3 class="heading_login">Reset Password</h3>
-                <p class="para_login">Lorem ipsum dolor sit amet consectetur. Netus quisque amet leo leo massa vel eget
-                    <br>feugiat. Porttitor in vitae elit eleifend purus arcu amet. In sed proin enim.</p>
+        <div class="error_main mobile_none">
+            <div class="">
+                <video class="bg-image mobile_none vid_login" loop="" muted="" autoplay="" style="object-fit: cover;">
+                    <source src="./assets/img/error_vid_bg.mp4" type="video/mp4">
+                </video>
             </div>
-        </div>
-        <div class="div2_login">
-            <div class="div2_login_border">
-                <div class="div2_login_inner">
-                    <div class="div2_login_input">
-                        <div class="eye_input_login w-100">
-                            <input type="password" id="input_login_id" class="input_login w-100" placeholder="Password">
-                            <img src="./assets/img/open_eye.svg" alt="" id="id_of_eye_img" class="pass_img_eye"
-                                onclick="togglePassword('input_login_id',this)">
-                        </div>
-                        <div class="eye_input_login w-100">
-                            <input type="password" id="input_login_id" class="input_login w-100"
-                                placeholder="Confirm New Password">
-                            <img src="./assets/img/open_eye.svg" alt="" id="id_of_eye_img" class="pass_img_eye"
-                                onclick="togglePassword('input_login_id',this)">
-                        </div>
-                    </div>
-                    <button class="btn btn_global_dark input_btn_div2" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        <span></span>
-                        Save new password
-                        <span></span>
-                    </button>
+            <div class="error_inner">
+                <div class="heading_div_error">
+                    <h3 class="heading__error">404</h3>
+                    <h4 class="subheading_error">Page not Found</h4>
                 </div>
+                <p class="para_error">The page you have requested could not be found.
+                    Don’t worry and return back to the homepage.</p>
+                <button class="btn btn_global_dark">
+                    <span></span>
+                    Return Home
+                    <span></span>
+                </button>
             </div>
         </div>
+        <div class="div_error_mo desktop_none">
+            <div class="div_vid_error_mo">
+                <video class="bg-image desktop_none vid_login" loop="" muted="" autoplay="" style="object-fit: cover;">
+                    <source src="./assets/img/error_mo_vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="div_inner_error_mo desktop_none">
+                <div class="heading_div_error_mo">
+                    <h2 class="heading_error_mo">404</h2>
+                    <h4 class="subheading_error_mo">Page not Found</h4>
+                </div>
+                <p class="para_error_mo">The page you have requested could not be found. Don’t worry and return back to the homepage.</p>
+                <button class="btn btn_global_dark w-100">
+                    <span></span>
+                    Return Home
+                    <span></span>
+                </button>
+            </div>
         <div class="div3_login">
             <div class="div3_login_inner">
                 <div class="div3_login_heading">
@@ -368,30 +375,9 @@
         </div>
     </section>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="">
-                <div class="modal-content modal_con">
-                    <div class="div_modal_border">
-                        <div class="div_modal_inner">
-                            <div class="heading_modal_div">
-                                <h2 class="heading_modal">Your new password <br class="mobile_none">has <br
-                                        class="desktop_none"> been updated</h2>
-                                <p class="para_modul">Lorem ipsum dolor sit amet consectetur. Id malesuada pulvinar in
-                                    nulla eu tristique convallis pharetra. Dui vestibulum in aliquet bibendum amet. Ac
-                                    in a mauris porttitor id. Viverra turpis sit in,</p>
-                            </div>
-                            <button class="btn btn_global_dark w-100">
-                                <span></span>
-                                login
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+
 
 
 
