@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calligraphii</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/css/owl.carousel.css">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header class="fixed-top" id="header">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <button class="btn btn_header_link active">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            Shop
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('service_drop', 'roter1', this)">
+                                <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                                Services
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter1" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_6846_15117)">
+                                        <path d="M8 10L11.5 14L15 10" stroke="white" stroke-linecap="square"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6846_15117">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                            </button>
+                            <div class="dropped_div d-none" id="service_drop">
+                                <button class="btn btn_inner_drop">Weddings</button>
+                                <button class="btn btn_inner_drop active">General Calligraphy</button>
+                                <button class="btn btn_inner_drop">Branding</button>
+                                <button class="btn btn_inner_drop">Personal Signature</button>
+                            </div>
+                        </div>
+                        <button class="btn btn_header_link">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            About
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                        <button class="btn btn_header_link">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            Bespoke
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                        <button class="btn btn_header_link">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            Support
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                    </div>
+                    <div class="header_center">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_right">
+                        <button class="btn btn_header_link">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            Login
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                        <button class="btn btn_header_link">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            Register
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                        <button class="btn btn_header_link">
+                            <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_up">
+                            Cart (0)
+                            <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                        </button>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                <img src="./assets/img/tri_up.svg" alt="" class="img-fluid tri_down">
+                                USD $
+
+                                <svg xmlns="http://www.w3.org/2000/svg" id="roter2" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_6846_15117)">
+                                        <path d="M8 10L11.5 14L15 10" stroke="white" stroke-linecap="square"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6846_15117">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <img src="./assets/img/tri_down.svg" alt="" class="img-fluid tri_down">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop active">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                                <button class="btn btn_inner_drop">GBP £</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_logo.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link_mobo">
+                    Shop
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_link_mobo mx-auto"
+                        onclick="justDrop('service_drop_mobo', 'roter3', this)">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" id="roter3" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="service_drop_mobo">
+                        <button class="btn btn_inner_drop">Weddings</button>
+                        <button class="btn btn_inner_drop active">General Calligraphy</button>
+                        <button class="btn btn_inner_drop">Branding</button>
+                        <button class="btn btn_inner_drop">Personal Signature </button>
+                    </div>
+                </div>
+                <button class="btn btn_header_link_mobo">
+                    About
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Bespoke
+                </button>
+                <button class="btn btn_header_link_mobo active">
+                    Support
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Login
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Register
+                </button>
+                <button class="btn btn_header_link_mobo">
+                    Cart (0)
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_link_mobo mx-auto"
+                        onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#162222" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop active">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                        <button class="btn btn_inner_drop">GBP</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+
+            <div class="header_cart_main_mobo">
+                <h1 class="cart_title">Shopping Cart</h1>
+                <div class="cart_item_outer">
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item">
+                        <div class="cart_item_center">
+                            <div class="cart_item_center_top">
+                                <p class="cart_item_price">$10.00</p>
+                                <p class="cart_item_discount">50% (RRP $20.00)</p>
+                            </div>
+                            <div class="cart_item_center_bottom">
+                                <img src="./assets/img/cart_item_img.png" alt="" class="img-fluid cart_item_image">
+                                <p class="cart_item_title">Nike <span>USD $20</span></p>
+                            </div>
+                        </div>
+                        <div class="cart_item_right">
+                            <div class="item_inc_dec_box">
+                                <button class="btn btn_inc_dec" onclick="addQty('inc_dec_num1')">
+                                    <img src="./assets/img/inc_plus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                                <input type="number" class="inc_dec_num" id="inc_dec_num1" value="1">
+                                <button class="btn btn_inc_dec" onclick="subQty('inc_dec_num1')">
+                                    <img src="./assets/img/dec_minus.svg" alt="" class="img-fluid img_inc_dec">
+                                </button>
+                            </div>
+                            <img src="./assets/img/cart_bin.svg" alt="" class="img-fluid cart_bin">
+                        </div>
+                    </div>
+                    <div class="cart_item_total">
+                        <p class="cart_total_text">RRP</p>
+                        <p class="cart_total_text">£379.00</p>
+                    </div>
+
+                    <div class="cart_item_total2">
+                        <p class="cart_total_text1">Total</p>
+                        <p class="cart_total_text1">£379.00</p>
+                    </div>
+                </div>
+                <div class="cart_btn_grp">
+                    <button class="btn btn_global_dark" onclick="closeMobileCart()">
+                        <p class="btn_global_text2">Close Cart</p>
+                        <span class="btn_global_dark_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                    <button class="btn btn_global_green">
+                        <p class="btn_global_text">Checkout</p>
+                        <span class="btn_global_green_inner">
+                            <img src="./assets/img/btn_arrow_white.svg" alt="" class="img-fluid btn_arrow">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="error_main mobile_none">
+            <div class="">
+                <video class="bg-image mobile_none vid_login" loop="" muted="" autoplay="" style="object-fit: cover;">
+                    <source src="./assets/img/error_vid_bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="error_inner">
+                <div class="heading_div_error">
+                    <h3 class="heading__error">404</h3>
+                    <h4 class="subheading_error">Page not Found</h4>
+                </div>
+                <p class="para_error">The page you have requested could not be found.
+                    Don’t worry and return back to the homepage.</p>
+                <button class="btn btn_global_dark">
+                    <span></span>
+                    Return Home
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="div_error_mo desktop_none">
+            <div class="div_vid_error_mo">
+                <video class="bg-image desktop_none vid_login" loop="" muted="" autoplay="" style="object-fit: cover;">
+                    <source src="./assets/img/error_mo_vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="div_inner_error_mo desktop_none">
+                <div class="heading_div_error_mo">
+                    <h2 class="heading_error_mo">404</h2>
+                    <h4 class="subheading_error_mo">Page not Found</h4>
+                </div>
+                <p class="para_error_mo">The page you have requested could not be found. Don’t worry and return back to the homepage.</p>
+                <button class="btn btn_global_dark w-100">
+                    <span></span>
+                    Return Home
+                    <span></span>
+                </button>
+            </div>
+        <div class="div3_login">
+            <div class="div3_login_inner">
+                <div class="div3_login_heading">
+                    <h2 class="login_heading2">Make Your Mark with <br class="mobile_none">
+                        Meaningful Calligraphy</h2>
+                    <p class="para_login4">Lorem ipsum dolor sit amet consectetur. Id malesuada pulvinar in nulla eu
+                        tristique convallis pharetra. Dui vestibulum in aliquet bibendum amet. Ac in a mauris porttitor
+                        id. Viverra turpis sit in vel sapien sit.</p>
+                </div>
+                <button class="btn btn_global_dark">
+                    <span></span>
+                    Order Your Calligraphy Today
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_top_frame">
+                <div class="footer_card">
+                    <div class="footer_card_top">
+                        <p class="footer_card_title">Shop</p>
+                    </div>
+                    <div class="footer_card_bottom">
+                        <img src="./assets/img/fi1.png" alt="" class="img-fluid footer_card_img">
+                    </div>
+                </div>
+                <div class="footer_card">
+                    <div class="footer_card_top">
+                        <p class="footer_card_title">Services</p>
+                    </div>
+                    <div class="footer_card_bottom">
+                        <img src="./assets/img/fi2.png" alt="" class="img-fluid footer_card_img">
+                    </div>
+                </div>
+                <div class="footer_card">
+                    <div class="footer_card_top">
+                        <p class="footer_card_title">About</p>
+                    </div>
+                    <div class="footer_card_bottom">
+                        <img src="./assets/img/fi3.png" alt="" class="img-fluid footer_card_img">
+                    </div>
+                </div>
+                <div class="footer_card">
+                    <div class="footer_card_top">
+                        <p class="footer_card_title">Bespoke</p>
+                    </div>
+                    <div class="footer_card_bottom">
+                        <img src="./assets/img/fi4.png" alt="" class="img-fluid footer_card_img">
+                    </div>
+                </div>
+                <div class="footer_card">
+                    <div class="footer_card_top">
+                        <p class="footer_card_title">Support</p>
+                    </div>
+                    <div class="footer_card_bottom">
+                        <img src="./assets/img/fi5.png" alt="" class="img-fluid footer_card_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <a href="./index.html">
+                <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+            </a>
+            <div class="footer_content">
+                <h4 class="footer_title">Placeholder Company Name LLC </h4>
+                <p class="footer_text">
+                    Office No. XX, Placeholder Street - Placeholder City <br>
+                    Email : Support@Calligraphii.com
+                    Tel: +11 123 4567 890
+                </p>
+            </div>
+            <div class="social_div">
+                <button class="btn btn_social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                        <rect x="0.5" width="25" height="24" rx="12" fill="#C9AB81" />
+                        <path
+                            d="M14.6694 7.38942V9.89812H17.902L17.3902 13.2775H14.6694V21.0634C14.1239 21.136 13.5659 21.1739 12.9993 21.1739C12.3454 21.1739 11.7033 21.1239 11.078 21.027V13.2775H8.09668V9.89812H11.078V6.82862C11.078 4.92431 12.6858 3.37988 14.6703 3.37988V3.3815C14.6762 3.3815 14.6812 3.37988 14.6871 3.37988H17.9029V6.30252H15.8016C15.1771 6.30252 14.6703 6.78908 14.6703 7.38862L14.6694 7.38942Z"
+                            fill="#1B1D1E" />
+                    </svg>
+                </button>
+                <button class="btn btn_social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <rect x="0.5" width="24" height="24" rx="12" fill="#C9AB81" />
+                        <path
+                            d="M16.088 5.37988H8.91312C6.93092 5.37988 5.31836 6.99245 5.31836 8.97464V15.5386C5.31836 17.5208 6.93092 19.1334 8.91312 19.1334H16.088C18.0702 19.1334 19.6828 17.5208 19.6828 15.5386V8.97464C19.6828 6.99245 18.0702 5.37988 16.088 5.37988ZM6.58648 8.97464C6.58648 7.6919 7.63038 6.64801 8.91312 6.64801H16.088C17.3708 6.64801 18.4147 7.6919 18.4147 8.97464V15.5386C18.4147 16.8214 17.3708 17.8653 16.088 17.8653H8.91312C7.63038 17.8653 6.58648 16.8214 6.58648 15.5386V8.97464Z"
+                            fill="#1B1D1E" />
+                        <path
+                            d="M12.501 15.5996C14.3442 15.5996 15.8447 14.1 15.8447 12.2559C15.8447 10.4118 14.3451 8.91211 12.501 8.91211C10.6569 8.91211 9.15723 10.4118 9.15723 12.2559C9.15723 14.1 10.6569 15.5996 12.501 15.5996ZM12.501 10.181C13.6456 10.181 14.5766 11.112 14.5766 12.2567C14.5766 13.4013 13.6456 14.3323 12.501 14.3323C11.3563 14.3323 10.4253 13.4013 10.4253 12.2567C10.4253 11.112 11.3563 10.181 12.501 10.181Z"
+                            fill="#1B1D1E" />
+                        <path
+                            d="M16.1539 9.45225C16.6502 9.45225 17.0548 9.0485 17.0548 8.55132C17.0548 8.05415 16.651 7.65039 16.1539 7.65039C15.6567 7.65039 15.2529 8.05415 15.2529 8.55132C15.2529 9.0485 15.6567 9.45225 16.1539 9.45225Z"
+                            fill="#1B1D1E" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="footer_bar desktop_none"></div>
+
+            <div class="desktop_none">
+                <div class="footer_link_div">
+                    <div class="footer_link_div_l">
+                        <button class="btn btn_footer_link">Shop</button>
+                        <button class="btn btn_footer_link">Wedding Services</button>
+                        <button class="btn btn_footer_link">General Services</button>
+                        <button class="btn btn_footer_link">Branding Services</button>
+                        <button class="btn btn_footer_link">Signature Services</button>
+                    </div>
+                    <div class="footer_link_div_r">
+                        <button class="btn btn_footer_link">About</button>
+                        <button class="btn btn_footer_link">Bespoke</button>
+                        <button class="btn btn_footer_link">Support</button>
+                        <button class="btn btn_footer_link">Login</button>
+                        <button class="btn btn_footer_link">Registe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bar"></div>
+
+            <div class="footer_copyright">
+                <div class="footer_copy_l">
+                    <p class="footer_copy_text">© 2025 <span>Calligraphii.Com</span> All Rights Reserved.</p>
+                </div>
+                <div class="footer_copy_r">
+                    <button class="btn btn_footer_copy_links">Terms And Conditions</button>
+                    <button class="btn btn_footer_copy_links">Privacy Policy</button>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

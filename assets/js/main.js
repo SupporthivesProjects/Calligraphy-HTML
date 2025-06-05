@@ -40,6 +40,25 @@ function justDrop(droperId, roterId, element) {
         theId2.style.rotate = '0deg';
     }
 }
+function justDrop2(droperId, roterId, element) {
+    const theId = document.getElementById(droperId);
+    const theId2 = document.getElementById(roterId);
+    const theId3 = document.getElementById('changterd')
+
+    if (theId.classList.contains('d-none')) {
+        theId.classList.remove('d-none');
+        element.classList.add("active")
+        theId2.style.rotate = '180deg';
+    } else {
+        theId.classList.add('d-none');
+        element.classList.remove("active")
+        theId2.style.rotate = '0deg';
+        if (theId3.innerHTML) {
+            theId3.innerHTML = element.innerText;
+            element.classList.add('active')
+        }
+    }
+}
 
 
 function field_box_file() {
